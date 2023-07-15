@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+body {
+  padding-top: 50px;
+}
+:root {
+  --grey: #5f6368;
+  --blue: #1967d2;
+  --red: #d93025;
+  --green: #188038;
+  --yellow: #e37400;
+  --header: #e9e3dc;
+  --button: #5f6368;
+}

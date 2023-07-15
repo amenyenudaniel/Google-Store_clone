@@ -1,0 +1,152 @@
+.logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.nav {
+  box-shadow: 0px 1px 7px 0px var(--grey);
+  z-index: 1000;
+}
+
+.app__navbar-links {
+  display: flex;
+  align-items: center;
+}
+.app__navbar-links a {
+  color: rgb(60, 64, 67);
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s ease;
+}
+
+.app__navbar-links a:hover {
+  color: var(--blue);
+}
+
+.app__navbar-icons {
+  display: flex;
+  align-items: center;
+}
+.search__icon,
+.questionmark__icon,
+.cart__icon {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  color: var(--grey);
+  transition: 0.4s ease;
+}
+
+.search__icon:hover,
+.questionmark__icon:hover,
+.cart__icon:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.profile {
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.toggle__icon {
+  font-size: 1.5rem;
+  color: var(--grey);
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.close__icon {
+  font-size: 1.7rem;
+  color: var(--grey);
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile__overlay {
+  padding-top: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  z-index: 500;
+  background-color: white;
+  overflow: scroll;
+  display: none;
+}
+.mobile__overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile__container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.mobile__container:hover {
+  background-color: rgba(107, 109, 112, 0.08);
+}
+
+.mobile__container img {
+  width: 48px;
+  height: 45px;
+  margin-right: 1rem;
+}
+.mobile__container p {
+  font-size: 1.1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--grey);
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(107, 109, 112, 0.08);
+  margin: 1rem 0rem;
+}
+.mobile__questionmark {
+  font-size: 2.5rem;
+  color: var(--grey);
+  margin-right: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .toggle__icon,
+  .close__icon {
+    display: inline-flex;
+  }
+  .mobile__overlay {
+    display: inline-block;
+  }
+  .questionmark__icon {
+    display: none;
+  }
+
+  .app__navbar-links a {
+    display: none;
+  }
+}

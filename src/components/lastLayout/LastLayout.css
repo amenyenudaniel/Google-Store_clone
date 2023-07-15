@@ -1,0 +1,140 @@
+.first__lastlayout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.first__lastlayout img {
+  width: 50%;
+  height: 50%;
+  margin-left: 4rem;
+}
+
+.lastlayout__content h1 {
+  width: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #3c4043;
+  margin-bottom: 1.5rem;
+}
+
+.lastlayout__content p {
+  font-size: 1.3rem;
+  color: #3c4043;
+  line-height: 1.4;
+  width: 70%;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lastlayout__content button,
+.second__lastlayout button {
+  font-size: 0.95rem;
+  color: #3c4043;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 5px;
+  padding-inline: 1.2rem;
+  background-color: transparent;
+  font-weight: 700;
+  border: 3px solid var(--button);
+  transition: 0.3s ease;
+  margin-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.lastlayout__content button:hover,
+.second__lastlayout button:hover {
+  background-color: var(--button);
+  cursor: pointer;
+  color: white;
+}
+
+.second__lastlayout {
+  background-color: #f8f9fa;
+  text-align: center;
+  margin: 4rem 3rem;
+  padding: 2rem 3rem;
+}
+
+.second__lastlayout img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.second__lastlayout h2 {
+  font-size: 3rem;
+  color: #3c4043;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.3rem;
+}
+
+.second__lastlayout p {
+  font-size: 1.3rem;
+  color: #3c4043;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .first__lastlayout {
+    flex-direction: column;
+    padding: 1rem 4rem;
+  }
+  .first__lastlayout img {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .second__lastlayout {
+    margin: 3rem 2rem;
+    padding: 1rem 2rem;
+  }
+
+  .second__lastlayout h2 {
+    font-size: 2.5rem;
+  }
+
+  .second__lastlayout p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .first__lastlayout {
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .lastlayout__content h1 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .lastlayout__content p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .lastlayout__content h2 {
+    font-size: 1.7rem;
+  }
+
+  .lastlayout__content p {
+    font-size: 0.9rem;
+  }
+
+  .second__lastlayout {
+    margin: 2rem 1.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .second__lastlayout h2 {
+    font-size: 1.5rem;
+  }
+
+  .second__lastlayout p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,217 @@
+.app__slider {
+  padding: 5rem 9rem;
+  height: 110vh;
+  position: relative;
+}
+
+.app__slider h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #3c4043;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app__slider-grid {
+  display: flex;
+  align-items: flex-start;
+  overflow-x: scroll;
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
+  gap: 2rem;
+}
+.app__slider-card {
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.app__slider-card:hover .card__content h3 {
+  color: blue;
+}
+
+.app__slider-card:hover .card__img__container img {
+  scale: 1.05;
+}
+.card__img__container {
+  background-color: #f8f9fa;
+  width: 210px;
+  height: 310px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.card__img__container img {
+  width: 210px;
+  height: 250px;
+  object-fit: cover;
+  padding-top: 2rem;
+  transition: 0.4s ease;
+}
+
+.card__img__container button {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  border: none;
+  border-radius: 1rem;
+  background-color: #e3f0f0;
+  padding: 0.5rem;
+  color: #3c4043;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  font-size: 0.9rem;
+  padding-inline: 0.7rem;
+}
+
+.card__content h3 {
+  font-size: 1.2rem;
+  color: #3c4043;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  transition: 0.4s ease;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card__content p {
+  font-size: 1.2rem;
+  color: #3c4043;
+  font-weight: 300;
+  font-family: Arial, Helvetica;
+  margin-bottom: 2rem;
+}
+
+.card__content a {
+  font-size: 1.2rem;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.card__content a:hover {
+  text-decoration: underline blue;
+}
+
+.arrow__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -50vh;
+}
+
+.round__btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  box-shadow: 1px 1px 1px 1px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #3c4043;
+  transition: 0.3s ease;
+}
+
+.round__btn:hover {
+  box-shadow: none;
+  background-color: rgb(190, 185, 185);
+  cursor: pointer;
+}
+
+.first__btn {
+  margin-left: -6rem;
+}
+
+.second__btn {
+  margin-right: -6rem;
+}
+
+.app__slider-grid::-webkit-scrollbar {
+  height: 2.5px;
+}
+
+.app__slider-grid::-webkit-scrollbar-track {
+  background-color: rgb(190, 185, 185);
+}
+
+.app__slider-grid::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+@media screen and (max-width: 1300px) {
+  .app__slider {
+    height: 150vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .app__slider h1 {
+    font-size: 2.5rem;
+  }
+
+  .card__img__container {
+    width: 200px;
+    height: 290px;
+  }
+
+  .card__img__container img {
+    width: 190px;
+    height: 230px;
+    padding-top: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card__content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card__content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .card__content a {
+    font-size: 1rem;
+  }
+
+  .app__slider h1 {
+    font-size: 2rem;
+  }
+
+  .app__slider {
+    padding: 2rem 2rem;
+    height: 100%;
+  }
+
+  .arrow__buttons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .app__slider h1 {
+    font-size: 1.5rem;
+  }
+
+  .card__img__container {
+    width: 180px;
+    height: 260px;
+  }
+
+  .card__img__container img {
+    width: 160px;
+    height: 200px;
+    padding-top: 2rem;
+  }
+
+  .card__img__container button {
+    top: 15px;
+    left: 20px;
+    border-radius: 0.8rem;
+    padding: 0.4rem;
+
+    font-size: 0.8rem;
+    padding-inline: 0.5rem;
+  }
+}

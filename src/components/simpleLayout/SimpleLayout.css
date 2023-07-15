@@ -1,0 +1,154 @@
+.app__simplelayout {
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+
+.simplelayout__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.simplelayout__container {
+  text-align: center;
+  background-color: #f3f2f1;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.simplelayout__container p {
+  font-size: 1.1rem;
+  padding-top: 3rem;
+  color: #3c4043;
+  font-weight: 400;
+  font-family: Arial;
+  margin-bottom: 1.3rem;
+}
+.simplelayout__container h2 {
+  font-size: 2.8rem;
+  color: #3c4043;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.1;
+  margin-bottom: 1.6rem;
+}
+
+.simplelayout__container button {
+  font-size: 0.95rem;
+  color: #3c4043;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 5px;
+  padding-inline: 1.2rem;
+  background-color: transparent;
+  font-weight: 700;
+  border: 2px solid var(--button);
+  transition: 0.3s ease;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.simplelayout__container button:hover {
+  background-color: var(--button);
+  cursor: pointer;
+  color: white;
+}
+.simplelayout__container img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 2rem;
+}
+
+.layout2,
+.layout1 {
+  background-color: #e7ebee;
+}
+
+.NBA {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  background-color: #e8f1ed;
+  border-radius: 2rem;
+  padding: 2rem 4rem;
+}
+.NBA img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.NBA__content h3 {
+  font-size: 1.8rem;
+  color: #3c4043;
+  margin-bottom: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.NBA__content p {
+  font-size: 1.2rem;
+  color: #3c4043;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 700px;
+}
+.NBA__content p span {
+  color: var(--blue);
+  text-decoration: underline var(--blue);
+  cursor: pointer;
+}
+
+.NBA button {
+  font-size: 1rem;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.NBA button:hover {
+  background-color: blue;
+}
+
+@media screen and (max-width: 1150px) {
+  .NBA__content p {
+    width: 100%;
+    text-align: center;
+  }
+  .app__simplelayout {
+    margin-top: 3rem;
+    padding: 1rem 6rem;
+  }
+  .NBA {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .NBA__content h3 {
+    text-align: center;
+  }
+  .simplelayout__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__simplelayout {
+    padding: 1rem 2rem;
+  }
+  .NBA__content h3 {
+    font-size: 1.9rem;
+  }
+
+  .simplelayout__container h2 {
+    font-size: 1.6rem;
+  }
+}

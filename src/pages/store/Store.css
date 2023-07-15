@@ -1,0 +1,148 @@
+.app__store {
+  background-color: var(--header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8rem;
+  height: 95vh;
+}
+
+.app__store img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: -60px;
+}
+
+.store__content {
+  color: #3c4043;
+  text-align: left;
+}
+
+.p__text1 {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.store__content h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 1.3rem;
+}
+
+.p__text2 {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  font-size: 0.95rem;
+  color: #3c4043;
+  padding: 0.7rem;
+  outline: none;
+  border-radius: 5px;
+  padding-inline: 1.2rem;
+  background-color: transparent;
+  font-weight: 700;
+  border: 2px solid var(--button);
+  transition: 0.3s ease;
+  margin-right: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buttons button:hover {
+  background-color: var(--button);
+  cursor: pointer;
+  color: white;
+}
+.button__content {
+  display: flex;
+  align-items: center;
+}
+
+.round__button {
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  border: 2.1px solid rgb(7, 5, 5);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.play__button {
+  margin-top: 1.9px;
+  margin-left: 2.2px;
+  color: rgb(7, 5, 5);
+  font-size: 0.9rem;
+}
+
+.p__text3 {
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.p__text3:hover {
+  cursor: pointer;
+  border-bottom: 1.4px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+  .app__store {
+    flex-direction: column-reverse;
+    margin: 0 8rem;
+    height: 100%;
+    padding: 1rem 5rem;
+  }
+  .store__content {
+    text-align: center;
+  }
+  .p__text1,
+  .p__text2,
+  .p__text3 {
+    width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .app__store {
+    margin: 0 4rem;
+    padding: 1rem 3rem;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .p__text1 {
+    font-weight: 400;
+  }
+
+  .store__content h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__store {
+    margin: 0 0;
+    padding: 1rem 1.5rem;
+    gap: 4rem;
+  }
+}
